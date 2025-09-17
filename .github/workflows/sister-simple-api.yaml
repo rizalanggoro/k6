@@ -1,0 +1,33 @@
+name: Sister Simple API
+on:
+  workflow_dispatch:
+
+jobs:
+  protocol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: grafana/setup-k6-action@v1
+      - uses: grafana/run-k6-action@v1
+        with:
+          path: |
+            ./sister-simple-api/1vu_10kb.js
+            ./sister-simple-api/1vu_100kb.js
+            ./sister-simple-api/1vu_1mb.js
+            ./sister-simple-api/1vu_5mb.js
+            ./sister-simple-api/1vu_10mb.js
+            ./sister-simple-api/10vu_10kb.js
+            ./sister-simple-api/10vu_100kb.js
+            ./sister-simple-api/10vu_1mb.js
+            ./sister-simple-api/10vu_5mb.js
+            ./sister-simple-api/10vu_10mb.js
+            ./sister-simple-api/100vu_10kb.js
+            ./sister-simple-api/100vu_100kb.js
+            ./sister-simple-api/100vu_1mb.js
+            ./sister-simple-api/100vu_5mb.js
+            ./sister-simple-api/100vu_10mb.js
+            ./sister-simple-api/1000vu_10kb.js
+            ./sister-simple-api/1000vu_100kb.js
+            ./sister-simple-api/1000vu_1mb.js
+            ./sister-simple-api/1000vu_5mb.js
+            ./sister-simple-api/1000vu_10mb.js

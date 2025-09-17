@@ -1,3 +1,4 @@
+name: PresensiGo
 on:
   workflow_dispatch:
 
