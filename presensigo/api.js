@@ -7,7 +7,7 @@ export const options = {
 };
 
 export default function () {
-  const url = "https://load-balancer-api.rizalanggoro.space/hostname";
+  const url = "https://api-presensigo.rizalanggoro.space";
   let res = http.get(url);
 
   check(res, {

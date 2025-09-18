@@ -11,4 +11,5 @@ jobs:
       - uses: grafana/run-k6-action@v1
         with:
           path: |
-            ./presensigo/spike.js
+            ./presensigo/api.js
+            ./presensigo/website.js
