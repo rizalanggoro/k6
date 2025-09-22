@@ -1,4 +1,4 @@
-name: Sister Tugas 4
+name: Sister Tugas 4 Test gRPC
 on:
   workflow_dispatch:
 
@@ -11,6 +11,4 @@ jobs:
       - uses: grafana/run-k6-action@v1
         with:
           path: |
-            ./sister-tugas-4/api-mq.js
-            ./sister-tugas-4/api-rest.js
             ./sister-tugas-4/api-grpc.js
