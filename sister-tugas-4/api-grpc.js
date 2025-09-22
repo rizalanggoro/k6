@@ -10,7 +10,7 @@ export default function () {
   const url =
     "https://api-sister-tugas-4.rizalanggoro.space/global-messages/grpc";
   const now = new Date();
-  const randomMessage = `Hello from k6! Current date: ${now.toISOString()}`;
+  const randomMessage = `Hello from k6 using gRPC! Current date: ${now.toISOString()}`;
   let res = http.post(
     url,
     JSON.stringify({
