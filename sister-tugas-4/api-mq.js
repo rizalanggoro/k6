@@ -7,7 +7,7 @@ export const options = {
 };
 
 export default function () {
-  const url = "https://api-sister-tugas-4.rizalanggoro.space/global-messages";
+  const url = "https://api-sister-tugas-4.rizalanggoro.space/global-messages/mq";
   const now = new Date();
   const randomMessage = `Hello from k6! Current date: ${now.toISOString()}`;
   let res = http.post(
