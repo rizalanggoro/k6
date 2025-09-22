@@ -1,4 +1,4 @@
-import { check } from "k6";
+import { check, sleep } from "k6";
 import http from "k6/http";
 
 export const options = {
@@ -22,4 +22,5 @@ export default function () {
   check(res, {
     "status 202": (r) => r.status === 202,
   });
+  sleep(1);
 }
