@@ -20,6 +20,6 @@ export default function () {
   );
 
   check(res, {
-    "status 200": (r) => r.status === 200,
+    "status 202": (r) => r.status === 202,
   });
 }
